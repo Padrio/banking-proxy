@@ -12,6 +12,9 @@ use Fhp\FinTs;
 use Fhp\Model\SEPAAccount;
 use Padrio\BankingProxy\Shared\Model\StatementCollection;
 
+/**
+ * @author Pascal Krason <p.krason@padr.io>
+ */
 final class Faccade
 {
     /**
