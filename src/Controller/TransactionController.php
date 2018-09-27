@@ -35,6 +35,7 @@ final class TransactionController extends AbstractController
 
     /**
      * @Route("/transaction", name="transaction")
+     *
      * @param Request $request
      *
      * @return JsonResponse
@@ -47,7 +48,7 @@ final class TransactionController extends AbstractController
         }
 
         $accountNumber = getenv('FINTS_ACCOUNT');
-        $parameters = $this->parseDateTime($request);
+        $parameters = $this->parseParameters($request);
         if ($parameters instanceof JsonResponse) {
             return $parameters;
         }
@@ -79,7 +80,7 @@ final class TransactionController extends AbstractController
         return true;
     }
 
-    private function parseDateTime(Request $request, string $format = 'd.m.Y')
+    private function parseParameters(Request $request, string $format = 'd.m.Y')
     {
         $query = $request->query;
         if (!$query->has('from')) {
