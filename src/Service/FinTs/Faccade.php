@@ -4,14 +4,13 @@ declare(strict_types=1);
 
 namespace App\Service\FinTs;
 
-use App\Model\StatementCollection;
 use DateTime;
 use Exception;
 use Fhp\Adapter\Exception\AdapterException;
 use Fhp\Adapter\Exception\CurlException;
 use Fhp\FinTs;
-use Fhp\Model\Account;
 use Fhp\Model\SEPAAccount;
+use Padrio\BankingProxy\Shared\Model\StatementCollection;
 
 final class Faccade
 {

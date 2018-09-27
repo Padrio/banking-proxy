@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "799c73fe7b2ee2610b5e2f11fe24db91",
+    "content-hash": "7258b91d3b8a983c2a3eac2bc4f33ced",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -680,6 +680,39 @@
                 "php"
             ],
             "time": "2018-07-15T17:25:16+00:00"
+        },
+        {
+            "name": "padrio/banking-proxy-shared",
+            "version": "1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Padrio/banking-proxy-shared.git",
+                "reference": "5bc7d2e90dfc5752d44db30a143a28173aa7cdf4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Padrio/banking-proxy-shared/zipball/5bc7d2e90dfc5752d44db30a143a28173aa7cdf4",
+                "reference": "5bc7d2e90dfc5752d44db30a143a28173aa7cdf4",
+                "shasum": ""
+            },
+            "require": {
+                "nemiah/php-fints": "1.0.*"
+            },
+            "type": "models",
+            "autoload": {
+                "psr-4": {
+                    "Padrio\\BankingProxy\\Shared\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Pascal Krason",
+                    "email": "p.krason@padr.io"
+                }
+            ],
+            "description": "Shared files for the banking-proxy",
+            "time": "2018-09-27T20:02:52+00:00"
         },
         {
             "name": "phpcollection/phpcollection",
