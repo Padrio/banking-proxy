@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7258b91d3b8a983c2a3eac2bc4f33ced",
+    "content-hash": "02157a5f6f25c02e1dbe686a2a16fb93",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -680,6 +680,40 @@
                 "php"
             ],
             "time": "2018-07-15T17:25:16+00:00"
+        },
+        {
+            "name": "padrio/banking-proxy-lib",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Padrio/banking-proxy-lib.git",
+                "reference": "0a8e47692a7a41608a7dd329f94b4c95bfea8ed4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Padrio/banking-proxy-lib/zipball/0a8e47692a7a41608a7dd329f94b4c95bfea8ed4",
+                "reference": "0a8e47692a7a41608a7dd329f94b4c95bfea8ed4",
+                "shasum": ""
+            },
+            "require": {
+                "nemiah/php-fints": "^1.0",
+                "padrio/banking-proxy-shared": "^1.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Padrio\\BankingProxy\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Pascal Krason",
+                    "email": "p.krason@padr.io"
+                }
+            ],
+            "description": "Service which transfers hbci tansfers to cool models",
+            "time": "2018-10-03T21:45:56+00:00"
         },
         {
             "name": "padrio/banking-proxy-shared",
@@ -2440,7 +2474,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "padrio/banking-proxy-lib": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {

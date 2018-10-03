@@ -35,5 +35,7 @@ services:
             $pin: '%env(FINTS_PIN)%'
             $logger: null
 
+    Padrio\BankingProxy\Transaction:
+
     # add more service definitions when explicit configuration is needed
     # please note that last definitions always *replace* previous ones

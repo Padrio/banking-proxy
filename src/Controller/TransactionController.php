@@ -2,10 +2,9 @@
 
 namespace App\Controller;
 
-use App\Service\FinTs\Faccade;
 use DateTime;
 use Exception;
-use Fhp\FinTs;
+use Padrio\BankingProxy\Transaction;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
@@ -16,21 +15,14 @@ use Symfony\Component\Routing\Annotation\Route;
  */
 final class TransactionController extends AbstractController
 {
-
     /**
-     * @var FinTs
+     * @var Transaction
      */
-    private $finTs;
+    private $transaction;
 
-    /**
-     * @var Faccade
-     */
-    private $faccade;
-
-    public function __construct(FinTs $finTs)
+    public function __construct(Transaction $transaction)
     {
-        $this->finTs = $finTs;
-        $this->faccade = new Faccade($finTs);
+        $this->transaction = $transaction;
     }
 
     /**
@@ -55,7 +47,7 @@ final class TransactionController extends AbstractController
 
         try {
             list($from, $to) = $parameters;
-            $collection = $this->faccade->getTransactions($accountNumber, $from, $to);
+            $collection = $this->transaction->getStatementCollection($accountNumber, $from, $to);
         } catch (Exception $e) {
             return $this->json(['error' => 'Could not fetch transactions: ' . $e->getMessage()], 500);
         }

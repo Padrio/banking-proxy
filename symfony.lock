@@ -50,6 +50,9 @@
     "nikic/php-parser": {
         "version": "v4.0.3"
     },
+    "padrio/banking-proxy-lib": {
+        "version": "dev-master"
+    },
     "padrio/banking-proxy-shared": {
         "version": "1.0"
     },
