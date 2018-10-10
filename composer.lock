@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "02157a5f6f25c02e1dbe686a2a16fb93",
+    "content-hash": "73649b1cd887f9c71f592d49e99426ad",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -683,21 +683,21 @@
         },
         {
             "name": "padrio/banking-proxy-lib",
-            "version": "dev-master",
+            "version": "2.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Padrio/banking-proxy-lib.git",
-                "reference": "0a8e47692a7a41608a7dd329f94b4c95bfea8ed4"
+                "reference": "a07c438eb57ba44370746603d3f42d61458871ac"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Padrio/banking-proxy-lib/zipball/0a8e47692a7a41608a7dd329f94b4c95bfea8ed4",
-                "reference": "0a8e47692a7a41608a7dd329f94b4c95bfea8ed4",
+                "url": "https://api.github.com/repos/Padrio/banking-proxy-lib/zipball/a07c438eb57ba44370746603d3f42d61458871ac",
+                "reference": "a07c438eb57ba44370746603d3f42d61458871ac",
                 "shasum": ""
             },
             "require": {
                 "nemiah/php-fints": "^1.0",
-                "padrio/banking-proxy-shared": "^1.0"
+                "psr/log": "^1.0.2"
             },
             "type": "library",
             "autoload": {
@@ -713,40 +713,7 @@
                 }
             ],
             "description": "Service which transfers hbci tansfers to cool models",
-            "time": "2018-10-03T21:45:56+00:00"
-        },
-        {
-            "name": "padrio/banking-proxy-shared",
-            "version": "1.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Padrio/banking-proxy-shared.git",
-                "reference": "5bc7d2e90dfc5752d44db30a143a28173aa7cdf4"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Padrio/banking-proxy-shared/zipball/5bc7d2e90dfc5752d44db30a143a28173aa7cdf4",
-                "reference": "5bc7d2e90dfc5752d44db30a143a28173aa7cdf4",
-                "shasum": ""
-            },
-            "require": {
-                "nemiah/php-fints": "1.0.*"
-            },
-            "type": "models",
-            "autoload": {
-                "psr-4": {
-                    "Padrio\\BankingProxy\\Shared\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "authors": [
-                {
-                    "name": "Pascal Krason",
-                    "email": "p.krason@padr.io"
-                }
-            ],
-            "description": "Shared files for the banking-proxy",
-            "time": "2018-09-27T20:02:52+00:00"
+            "time": "2018-10-10T18:18:03+00:00"
         },
         {
             "name": "phpcollection/phpcollection",
@@ -2474,9 +2441,7 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "padrio/banking-proxy-lib": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
